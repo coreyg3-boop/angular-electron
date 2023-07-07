@@ -3,5 +3,9 @@
     {{ 'PAGES.DETAIL.TITLE' | translate }}
   </h1>
 
+  <input id="file-field" type="file" (change)=dxfInput($event) />
+    
+  <pre id="output" stlye="font-family: monospace;"></pre>
+
   <a routerLink="/">{{ 'PAGES.DETAIL.BACK_TO_HOME' | translate }}</a>
 </div>
